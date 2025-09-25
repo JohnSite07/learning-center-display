@@ -214,7 +214,12 @@ export const timeFontSizes = [
   { value: "text-2xl", label: "2X Large", size: "24px" },
   { value: "text-3xl", label: "3X Large", size: "30px" },
   { value: "text-4xl", label: "4X Large", size: "36px" },
-  { value: "text-5xl", label: "5X Large", size: "48px" }
+  { value: "text-5xl", label: "5X Large", size: "48px" },
+  { value: "text-6xl", label: "6X Large", size: "60px" },
+  { value: "text-7xl", label: "7X Large", size: "72px" },
+  { value: "text-8xl", label: "8X Large", size: "96px" },
+  { value: "text-9xl", label: "9X Large", size: "128px" },
+  { value: "text-[10rem]", label: "10X Large", size: "160px" }
 ]
 
 // Time format options

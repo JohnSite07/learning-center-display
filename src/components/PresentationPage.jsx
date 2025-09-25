@@ -39,7 +39,7 @@ const PresentationPage = () => {
   const currentFile = getCurrentFile()
 
   return (
-    <div className="min-h-screen bg-gray-300 p-8">
+    <div className="min-h-screen bg-gray-300">
       {/* Navigation Controls - Hidden in fullscreen mode */}
       <div className="absolute top-4 right-4 z-10 flex space-x-2 opacity-20 hover:opacity-100 transition-opacity">
         <Link to="/upload">
@@ -57,12 +57,12 @@ const PresentationPage = () => {
       </div>
 
       {/* Main Layout Container */}
-      <div className="max-w-7xl mx-auto h-[calc(100vh-4rem)]">
+      <div className="w-full h-screen">
         <div className="bg-gray-400 p-6 h-full rounded-lg shadow-lg">
           <div className="flex h-full gap-6">
             
             {/* Main Content Area */}
-            <div className="flex-1 bg-white rounded-lg shadow-inner p-8 flex items-center justify-center">
+            <div className="basis-3/4 rounded-lg shadow-inner p-8 flex items-center justify-center">
               {currentFile ? (
                 <FileDisplay file={currentFile} />
               ) : (
@@ -81,7 +81,7 @@ const PresentationPage = () => {
             </div>
 
             {/* Right Sidebar - Widgets */}
-            <div className="w-80 bg-teal-600 rounded-lg shadow-inner p-6 flex flex-col gap-6">
+            <div className="basis-1/4 bg-teal-600 rounded-lg shadow-inner p-6 flex flex-col gap-6">
               
               {/* Time Widget */}
               <div className="bg-gray-200 rounded-lg p-6 flex-1 flex items-center justify-center">
