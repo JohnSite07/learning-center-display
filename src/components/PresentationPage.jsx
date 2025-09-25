@@ -58,11 +58,11 @@ const PresentationPage = () => {
 
       {/* Main Layout Container */}
       <div className="w-full h-screen">
-        <div className="bg-gray-400 p-6 h-full rounded-lg shadow-lg">
+        <div className="bg-gray-400 p-3 h-full rounded-lg shadow-lg">
           <div className="flex h-full gap-6">
             
             {/* Main Content Area */}
-            <div className="basis-3/4 rounded-lg shadow-inner p-8 flex items-center justify-center">
+            <div className="basis-7/8 rounded-lg shadow-inner p-1 overflow-hidden flex items-center justify-center">
               {currentFile ? (
                 <FileDisplay file={currentFile} />
               ) : (
@@ -81,7 +81,7 @@ const PresentationPage = () => {
             </div>
 
             {/* Right Sidebar - Widgets */}
-            <div className="basis-1/4 bg-teal-600 rounded-lg shadow-inner p-6 flex flex-col gap-6">
+            <div className="basis-5/12 bg-teal-600 rounded-lg shadow-inner p-6 flex flex-col gap-6">
               
               {/* Time Widget */}
               <div className="bg-gray-200 rounded-lg p-6 flex-1 flex items-center justify-center">

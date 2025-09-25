@@ -31,7 +31,7 @@ const FileDisplay = ({ file }) => {
         <img
           src={file.url}
           alt={file.name}
-          className="max-w-full max-h-full object-contain"
+          className="w-full h-full object-contain"
           onError={() => setImageError(true)}
         />
       )
@@ -55,7 +55,7 @@ const FileDisplay = ({ file }) => {
           controls
           autoPlay
           muted
-          className="max-w-full max-h-full"
+          className="w-full h-full object-contain"
           onError={() => setVideoError(true)}
         >
           Your browser does not support the video tag.
